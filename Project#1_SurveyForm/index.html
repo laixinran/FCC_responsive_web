@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="title">Coffee Preference</h1>
+    <p id="description">This is a survey to inquire about your consumption and drinking preference of Coffee.</p>
+    <form id="survey-form"> 
+      <fieldset>
+        <p>Personal Info</p>
+        <label id="name-label" class="padding">Name: <input id="name" type="text" required placeholder="Enter your name"/></label>
+        <label id="email-label" class="padding">Email Address: <input id="email" type="email" placeholder="Enter your email"required/></label>
+      </fieldset>
+
+      <fieldset>
+        <p>General Question</p>
+        <label id="number-label" class="padding">How many cups of coffee do you drink in a month? <input id="number" type="number" placeholder="Enter your number" required min="0" max="50"/></label>
+        <label class="padding">What's your favorite Coffee Brand? 
+          <select id="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">starbucks</option>
+            <option value="2">Manner</option>
+            <option value="3">Peets</option>
+          </select>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <p>What's the price of the coffee you usually buy?</p>
+        <label for="below20"><input value="20-" id="below20" type="radio" name="price" class="inline" checked /> Below 20</label>
+        <label for="20-40"><input value="20-40" id="20-40" type="radio" name="price" class="inline" /> 20-40</label>
+        <label for="40+"><input value="40+" id="40+" type="radio" name="price" class="inline" /> 40+ </label>
+      </fieldset>
+    
+      <fieldset>
+        <p>Why do you buy coffee?</p>
+        <label for="Energy Boost"><input id="Energy Boost" type="checkbox" name="whycoffee" class="inline" value="Energy Boost"/> Energy Boost</label>
+        <label for="Taste and Aroma"><input id="Taste and Aroma" type="checkbox" name="whycoffee" class="inline" value="Taste and Aroma" /> Taste and Aroma</label>
+        <label for="social-aspect"><input id="social-aspect" type="checkbox" name="whycoffee" class="inline" value="Social Aspect" /> Social Aspect</label>
+        <label for="health-benefits"><input id="health-benefits" type="checkbox" name="whycoffee" class="inline" value="Health Benefits" /> Health Benefits</label>
+      </fieldset>
+
+      <fieldset>
+       <p>Provide Your Comments</p><textarea id="comment" name="comment" rows="3" cols="30" placeholder="My comment is...."></textarea>
+      </fieldset>
+
+      <input id="submit" type="submit" Value="Submit" />
+    </form>
+  </body>
+</html>
